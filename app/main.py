@@ -1,10 +1,10 @@
 import logging
 import time
-from config import Config
-from database import init_db, get_db
-from models.ArquivosMonitorado import ArquivoMonitorado
-from services.github_service import GitHubService
-from services.llm_service import LLMService
+from app.config import Config
+from app.database import init_db, get_db
+from app.models.models import ArquivoMonitorado
+from app.services.github_service import GitHubService
+from app.services.llm_service import LLMService
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

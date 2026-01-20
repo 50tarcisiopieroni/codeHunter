@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from config import Config
-from models.ArquivosMonitorado import Base
+from app.config import Config
+from app.models.models import Base
 
 engine = create_engine(Config.DB_NAME, echo=False)
 SessionLocal = sessionmaker(bind=engine)

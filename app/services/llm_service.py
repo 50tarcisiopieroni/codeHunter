@@ -1,7 +1,7 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from models.ArquivosMonitorado import AnalysisResult
+from app.models.models import AnalysisResult
 
 class LLMService:
     def __init__(self, api_key: str):
